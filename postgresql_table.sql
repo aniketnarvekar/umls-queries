@@ -33,7 +33,8 @@ CREATE TABLE MRCONSO (
     SRL	text NOT NULL,
     SUPPRESS	char(1) NOT NULL,
     CVF	text,
-    raw varchar(1) default null 
+    raw varchar(1) default null,
+    PRIMARY KEY (aui)
 );
 
 DROP TABLE IF EXISTS MRCUI;
@@ -187,7 +188,8 @@ CREATE TABLE MRREL (
     DIR	varchar(1) default null,
     SUPPRESS	char(1) NOT NULL,
     CVF	text,
-    raw varchar(1) default null 
+    raw varchar(1) default null,
+    PRIMARY KEY (rui)
 );
 
 DROP TABLE IF EXISTS MRSAB;
